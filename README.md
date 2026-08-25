@@ -29,6 +29,7 @@ do aeroporto, das empresas terceirizadas e aéreas afiliadas ao aeroporto, os ve
 da propriedade do aeroporto, dados de voos planejados e em progresso conectados ao aeroporto, transporte
 e transferência de bagagens despachadas, status atuais de portões e pistas, e histórico de transações
 e pagamentos.
+
 No MongoDB, nós iremos armazenar registros referentes ao monitoramento climático dado pela torre de controle,
 sugestões e reclamações de clientes/empresas e relatórios sobre eventos atípicos enviados pela torre de controle,
 aviões conectados ao aeroporto ou por outras equipes internas.
@@ -39,8 +40,11 @@ aviões conectados ao aeroporto ou por outras equipes internas.
 
 # Membros: 
 Gabriel de Oliveira Bellini:  https://github.com/GOBellini
+
 Haroldo Oliveira Duarte Júnior: https://github.com/Haroldojr44
+
 Leandro Piva Borges: https://github.com/l3166452-jpg
+
 Lucas Brogliato: https://github.com/Frosted1421
 Sérgio Pilling: https://github.com/sergiopilling
 
