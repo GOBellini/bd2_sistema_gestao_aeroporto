@@ -46,6 +46,7 @@ Haroldo Oliveira Duarte Júnior: https://github.com/Haroldojr44
 Leandro Piva Borges: https://github.com/l3166452-jpg
 
 Lucas Brogliato: https://github.com/Frosted1421
+
 Sérgio Pilling: https://github.com/sergiopilling
 
 # Disciplina
