@@ -83,45 +83,6 @@ CREATE TABLE `Avioes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-CREATE TABLE `Voos` (
-  `id_voo` int(11) NOT NULL AUTO_INCREMENT,
-  `status_atual` varchar(45) NOT NULL,
-  `origem` varchar(45) NOT NULL,
-  `destino` varchar(45) NOT NULL,
-  `horario_partida` datetime NOT NULL,
-  `horario_chegada` datetime NOT NULL,
-  `Avioes_id_aviao` int(11) NOT NULL,
-  `Empresas_Aereas_id_empresa_aerea` int(11) NOT NULL,
-  PRIMARY KEY (`id_voo`),
-  KEY `Voos_Avioes_FK` (`Avioes_id_aviao`),
-  KEY `Voos_Empresas_Aereas_FK`
-    (`Empresas_Aereas_id_empresa_aerea`),
-  CONSTRAINT `Voos_Avioes_FK`
-    FOREIGN KEY (`Avioes_id_aviao`)
-    REFERENCES `Avioes` (`id_aviao`),
-  CONSTRAINT `Voos_Empresas_Aereas_FK`
-    FOREIGN KEY (`Empresas_Aereas_id_empresa_aerea`)
-    REFERENCES `Empresas_Aereas` (`id_empresa_aerea`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-CREATE TABLE `Bagagens` (
-  `id_bagagem` int(11) NOT NULL,
-  `peso` decimal(10,0) NOT NULL,
-  `tamanho` decimal(10,0) NOT NULL,
-  `status_atual` varchar(45) NOT NULL,
-  `Voos_id_voo` int(11) NOT NULL,
-  `Clientes_id_cliente` int(11) NOT NULL,
-  PRIMARY KEY (`id_bagagem`),
-  KEY `Bagagens_Voos_FK` (`Voos_id_voo`),
-  KEY `Bagagens_Clientes_FK` (`Clientes_id_cliente`),
-  CONSTRAINT `Bagagens_Voos_FK`
-    FOREIGN KEY (`Voos_id_voo`)
-    REFERENCES `Voos` (`id_voo`),
-  CONSTRAINT `Bagagens_Clientes_FK`
-    FOREIGN KEY (`Clientes_id_cliente`)
-    REFERENCES `Clientes` (`id_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 
 CREATE TABLE `Estacionamento` (
   `id_vaga` int(11) NOT NULL AUTO_INCREMENT,
