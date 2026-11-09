@@ -22,19 +22,42 @@ para a entrada de relatórios de alta prioridade, monitoramento de condições c
 clientes por meio do MongoDB.
 
 # Tecnologias Utilizadas
+* MySQL
+* MySQL Workbench
+* MariaDB
+* DBeaver
+* MongoDB
+* MongoDB Compass
+* Git
+* GitHub
 
 # Arquitetura de Dados
 No MySQL, nós iremos armazenar os dados e registros referentes as informações dos clientes e funcionários
 do aeroporto, das empresas terceirizadas e aéreas afiliadas ao aeroporto, os veículos estacionados dentro
-da propriedade do aeroporto, dados de voos planejados e em progresso conectados ao aeroporto, transporte
-e transferência de bagagens despachadas, status atuais de portões e pistas, e histórico de transações
+da propriedade do aeroporto, status atuais de portões e pistas, e histórico de transações
 e pagamentos.
 
 No MongoDB, nós iremos armazenar registros referentes ao monitoramento climático dado pela torre de controle,
 sugestões e reclamações de clientes/empresas e relatórios sobre eventos atípicos enviados pela torre de controle,
+dados de voos planejados e em progresso conectados ao aeroporto, transporte e transferência de bagagens despachadas,
 aviões conectados ao aeroporto ou por outras equipes internas.
 
 # Estrutura do Repositório
+docs:
+-Modelagem
+-Requisitos
+-Dicionário de Dados
+mysql:
+-DDL
+-DML
+-Consultas
+-Triggers
+-Stored Procedures
+-Índices
+-Views
+mongodb:
+-Dados
+-Consultas
 
 # Como Executar
 
