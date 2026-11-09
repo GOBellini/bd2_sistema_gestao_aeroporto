@@ -47,6 +47,7 @@ docs:
 - Modelagem
 - Requisitos
 - Dicionário de Dados
+
 mysql:
 - DDL
 - DML
@@ -55,6 +56,7 @@ mysql:
 - Stored Procedures
 - Índices
 - Views
+
 mongodb:
 - Dados
 - Consultas
