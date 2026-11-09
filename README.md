@@ -44,20 +44,20 @@ aviões conectados ao aeroporto ou por outras equipes internas.
 
 # Estrutura do Repositório
 docs:
--Modelagem
--Requisitos
--Dicionário de Dados
+- Modelagem
+- Requisitos
+- Dicionário de Dados
 mysql:
--DDL
--DML
--Consultas
--Triggers
--Stored Procedures
--Índices
--Views
+- DDL
+- DML
+- Consultas
+- Triggers
+- Stored Procedures
+- Índices
+- Views
 mongodb:
--Dados
--Consultas
+- Dados
+- Consultas
 
 # Como Executar
 
