@@ -1,7 +1,7 @@
-USE `dados`;
+USE `BD_AEROPORTO`;
 
 CREATE TABLE `Contatos` (
-  `id_contato` int(11) NOT NULL,
+  `id_contato` int(11) NOT NULL AUTO_INCREMENT,
   `telefone` varchar(15) DEFAULT NULL,
   `email` varchar(45) NOT NULL,
   `url` varchar(60) DEFAULT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE `Funcionarios` (
 
 
 CREATE TABLE `Avioes` (
-  `id_aviao` int(11) NOT NULL,
+  `id_aviao` int(11) NOT NULL AUTO_INCREMENT,
   `modelo` varchar(45) DEFAULT NULL,
   `status_atual` varchar(45) NOT NULL,
   `estacionado_em` varchar(45) NOT NULL,
