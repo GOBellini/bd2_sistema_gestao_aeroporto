@@ -62,7 +62,14 @@ mongodb:
 - Consultas
 
 # Como Executar
-
+MySQL: 
+1 - No seu SGBD de MySQL de escolha, crie uma database com o nome "BD_AEROPORTO"
+2 - Instale o arquivo DDL_criacao_tabelas.sql
+3 - Abra ele no SGBD e o execute
+4 - Instale os arquivos Indexes.sql, Triggers.sql e Stored_Procedures.sql
+5 - Abra eles no SGBD e os execute
+6 - Instale os arquivos DCL_usuarios.sql e DML_populacao_tabelas.sql
+7 - Abra eles no SGBD e os execute
 # Membros: 
 Gabriel de Oliveira Bellini:  https://github.com/GOBellini
 
