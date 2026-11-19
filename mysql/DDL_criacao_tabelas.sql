@@ -2,7 +2,7 @@ USE `BD_AEROPORTO`;
 
 CREATE TABLE `Contatos` (
   `id_contato` int(11) NOT NULL AUTO_INCREMENT,
-  `telefone` varchar(15) DEFAULT NULL,
+  `telefone` decimal(15) DEFAULT NULL,
   `email` varchar(45) NOT NULL,
   `url` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id_contato`)
@@ -14,7 +14,7 @@ CREATE TABLE `Clientes` (
   `nome` varchar(45) NOT NULL,
   `cpf` varchar(11) NOT NULL,
   `email` varchar(45) DEFAULT NULL,
-  `telefone` varchar(15) NOT NULL,
+  `telefone` decimal(15) NOT NULL,
   PRIMARY KEY (`id_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -54,7 +54,7 @@ CREATE TABLE `Funcionarios` (
   `nome` varchar(45) NOT NULL,
   `cpf` varchar(11) NOT NULL,
   `email` varchar(45) DEFAULT NULL,
-  `telefone` varchar(15) NOT NULL,
+  `telefone` decimal(15) NOT NULL,
   `profissao` varchar(45) NOT NULL,
   `salario` decimal(10,2) NOT NULL,
   `status` int(11) NOT NULL,
