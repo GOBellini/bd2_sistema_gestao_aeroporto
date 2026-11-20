@@ -102,7 +102,7 @@ CREATE TABLE `Estacionamento` (
     REFERENCES `Funcionarios` (`id_funcionario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE `Pagementos` (
+CREATE TABLE `Pagamentos` (
   `id_pagamento` int(11) NOT NULL AUTO_INCREMENT,
   `valor_total` decimal(12,2) NOT NULL,
   `tipo_pagamento` varchar(45) NOT NULL,
@@ -112,18 +112,18 @@ CREATE TABLE `Pagementos` (
   `Empresas_Terceirizadas_id_empresa_terceira` int(11) DEFAULT NULL,
   `Empresas_Aereas_id_empresa_aerea` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_pagamento`),
-  KEY `Pagementos_Clientes_FK` (`Clientes_id_cliente`),
-  KEY `Pagementos_Empresas_Terceirizadas_FK`
+  KEY `Pagamentos_Clientes_FK` (`Clientes_id_cliente`),
+  KEY `Pagamentos_Empresas_Terceirizadas_FK`
     (`Empresas_Terceirizadas_id_empresa_terceira`),
-  KEY `Pagementos_Empresas_Aereas_FK`
+  KEY `Pagamentos_Empresas_Aereas_FK`
     (`Empresas_Aereas_id_empresa_aerea`),
-  CONSTRAINT `Pagementos_Clientes_FK`
+  CONSTRAINT `Pagamentos_Clientes_FK`
     FOREIGN KEY (`Clientes_id_cliente`)
     REFERENCES `Clientes` (`id_cliente`),
-  CONSTRAINT `Pagementos_Empresas_Terceirizadas_FK`
+  CONSTRAINT `Pagamentos_Empresas_Terceirizadas_FK`
     FOREIGN KEY (`Empresas_Terceirizadas_id_empresa_terceira`)
     REFERENCES `Empresas_Terceirizadas` (`id_empresa_terceira`),
-  CONSTRAINT `Pagementos_Empresas_Aereas_FK`
+  CONSTRAINT `Pagamentos_Empresas_Aereas_FK`
     FOREIGN KEY (`Empresas_Aereas_id_empresa_aerea`)
     REFERENCES `Empresas_Aereas` (`id_empresa_aerea`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
