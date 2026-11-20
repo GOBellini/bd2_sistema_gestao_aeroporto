@@ -1,3 +1,5 @@
+use `BD_AEROPORTO`;
+
 DELIMITER $$
  
 CREATE PROCEDURE sp_listar_funcionarios_empresa(
@@ -30,14 +32,15 @@ BEGIN
 END$$
  
 DELIMITER ;
- 
+
+DELIMITER $$
 CREATE PROCEDURE sp_consultar_pagamentos_cliente(
     IN p_id_cliente INT
 )
 BEGIN
     SELECT id_pagamento, valor_total, tipo_pagamento,
            data_pagamento, motivo_pagamento
-    FROM Pagementos
+    FROM Pagamentos
     WHERE Clientes_id_cliente = p_id_cliente
     ORDER BY data_pagamento DESC, id_pagamento DESC;
 END$$
