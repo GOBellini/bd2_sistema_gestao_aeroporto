@@ -35,7 +35,7 @@ DELIMITER ;
 
 DELIMITER $$
 CREATE TRIGGER tgr_validar_data_pagamento
-BEFORE INSERT ON Pagementos
+BEFORE INSERT ON Pagamentos
 FOR EACH ROW
 BEGIN
     IF NEW.data_pagamento > CURRENT_DATE() THEN
@@ -45,7 +45,7 @@ BEGIN
 END$$
  
 CREATE TRIGGER tgr_validar_data_pagamento_update
-BEFORE UPDATE ON Pagementos
+BEFORE UPDATE ON Pagamentos
 FOR EACH ROW
 BEGIN
     IF NEW.data_pagamento > CURRENT_DATE() THEN
